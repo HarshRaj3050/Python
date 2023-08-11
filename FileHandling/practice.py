@@ -1,8 +1,2 @@
-''' A file contains a word "Donkey" multiple times. You need to write a 
-program which replaces this word with $%^@%^# by updating the same file '''
-
-with open("samples2.txt") as f:
-    content = f.read()
-content = content.replace("Donkey", "$%^@%^#")
-with open("samples2.txt", "w") as f:
-    f.write(content)
+''' Write a program to generate multiplication table from 2 to 20 and write it
+to the differend files. place these files in a folder for a 13 years old '''
