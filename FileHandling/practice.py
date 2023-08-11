@@ -2,7 +2,7 @@
 to the differend files. place these files in a folder for a 13 years old '''
 
 for i in range(2, 21):
-    with open(f"tables/tables_of_{i}.txt", 'w') as f:
+    with open(f"table/tables_of_{i}.txt", 'w') as f:
         for j in range(1,11):
             f.write(f"{i} X {j} = {i*j}")
             if(j!=10):
