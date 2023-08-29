@@ -7,7 +7,6 @@ i = 1
 while(i <= num):
     sum = sum + i
     i = i+1
-avg = sum % num
-print(f"The sum of {num} Natural number is : {sum}")
-print(f"The average of {num} Natural number is : {avg}")
-
+avg = sum / num
+print(f"Sum of Natural number is : {sum}")
+print(f"Average of Natural number is : {avg}")
