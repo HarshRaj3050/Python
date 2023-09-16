@@ -1,2 +1,6 @@
-''' Write a program to mine a log file and find out whether it contains 'python'
-and find out the line number where python is present ''' 
+for i in range(1,21):
+    with open(f"table/table_of_{i}.txt") as f:
+        for j in range(1,11):
+            f.write(f"{i} X {j} = {i*j}")
+            if (j!=10):
+                f.write("\n")
