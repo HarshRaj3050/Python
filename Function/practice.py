@@ -1,11 +1,16 @@
-# Find the Factorial of any n number using recursion.
+# Function to generate Fibonacci series up to a given limit
+def generate_fibonacci_series(limit):
+    fibonacci_series = []
+    a, b = 0, 1
+    while a <= limit:
+        fibonacci_series.append(a)
+        a, b = b, a + b
+    return fibonacci_series
 
-def factorial(num):
-    if num == 0 or num == 1 :
-        return 1
-    else:
-        return num * factorial(num-1)
+# Set the limit
+limit = 55
 
-num = int(input("Enter the number : "))
-fact = factorial(num)
-print(f"The Factorial of {num} is : {fact}")
+# Generate and print the Fibonacci series up to the limit
+fib_series = generate_fibonacci_series(limit)
+print("Fibonacci series up to", limit, ":")
+print(fib_series)

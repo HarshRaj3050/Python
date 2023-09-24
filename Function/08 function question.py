@@ -1,4 +1,4 @@
-# Python Program to Print n term of Fibonacci Series (Iterative approach).
+# write a python program to get the fibonacci series between 0 to 55.
 
 def fibonacci(limit):
     prev = 0
