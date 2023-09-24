@@ -1,14 +1,11 @@
-# Write a python program using function to check if the enered year is leap year or not.
+# Find the Factorial of any n number using recursion.
 
-def leap(year):
-    if(year % 4 == 0 and year % 100 != 0):
-        print("The Year is leap year")
-    elif(year % 400 == 0):
-        print("The year is leap year")
-    elif(year % 100 == 0):
-        print("The year is not leap year")
+def factorial(num):
+    if num == 0 or num == 1 :
+        return 1
     else:
-        print("The is Year is not leap year")
+        return num * factorial(num-1)
 
-year = int(input("Enter the Year : "))
-leap(year)
+num = int(input("Enter the number : "))
+fact = factorial(num)
+print(f"The Factorial of {num} is : {fact}")
