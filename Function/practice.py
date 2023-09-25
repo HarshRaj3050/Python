@@ -1,16 +1,19 @@
-# Function to generate Fibonacci series up to a given limit
-def generate_fibonacci_series(limit):
-    fibonacci_series = []
-    a, b = 0, 1
-    while a <= limit:
-        fibonacci_series.append(a)
-        a, b = b, a + b
-    return fibonacci_series
+# Python Program to Print n term of Fibonacci Series (Iterative approach).
 
-# Set the limit
-limit = 55
+def fibonacci(num):
+    prev = 0
+    current = 1
+    if num == 0:
+        return 0
+    elif num == 1:
+        return 1
+    else:
+        for i in range(1,num):
+            prevprev = prev
+            prev = current
+            current = prev + prevprev
+    return current
 
-# Generate and print the Fibonacci series up to the limit
-fib_series = generate_fibonacci_series(limit)
-print("Fibonacci series up to", limit, ":")
-print(fib_series)
+num = int(input("Enter the number : "))
+fibo = fibonacci(num)
+print(f"the fibonacci of {num} is : {fibo}")
