@@ -1,19 +1,16 @@
-# Python Program to Print n term of Fibonacci Series (Iterative approach).
+# write a python program to get the fibonacci series between 0 to 55.
 
-def fibonacci(num):
+def fibonacci(limit):
     prev = 0
     current = 1
-    if num == 0:
-        return 0
-    elif num == 1:
-        return 1
-    else:
-        for i in range(1,num):
-            prevprev = prev
-            prev = current
-            current = prev + prevprev
-    return current
+    list_fibonacci = []
+    while(prev <= limit):
+        list_fibonacci.append(prev)
+        prevprev = prev
+        prev = current
+        current = prev + prevprev
+    return list_fibonacci
 
-num = int(input("Enter the number : "))
-fibo = fibonacci(num)
-print(f"the fibonacci of {num} is : {fibo}")
+limit = 55
+fibo = fibonacci(limit)
+print(fibo)
